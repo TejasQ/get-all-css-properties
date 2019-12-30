@@ -1,5 +1,7 @@
 # `get-all-css-properties`
 
+[![source](./img/tweet.png)](https://twitter.com/tlakomy/status/1211695059055316994)
+
 A little CLI to get all the CSS properties sorted alphabetically and display it in your terminal, or to do whatever you want.
 
 ## k but why
