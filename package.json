@@ -1,0 +1,40 @@
+{
+  "name": "get-all-css-properties",
+  "description": "A npm module to list all the CSS properties alphabetically.",
+  "keywords": [
+    "css"
+  ],
+  "bugs": {
+    "email": "tejas@tejas.qa"
+  },
+  "files": [
+    "lib"
+  ],
+  "author": {
+    "email": "tejas@tejas.qa",
+    "name": "Tejas Kumar",
+    "url": "https://twitter.com/tejaskumar_"
+  },
+  "contributors": [
+    "tejaskumar"
+  ],
+  "repository": {
+    "url": "git@github.com:TejasQ/get-all-css-properties.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "preversion": "tsc"
+  },
+  "version": "1.0.5",
+  "main": "./lib/getAllCSSProperties.js",
+  "bin": "./lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.4",
+    "typescript": "^3.8.0-dev.20191228"
+  }
+}
