@@ -9,13 +9,10 @@ export const getAllCSSProperties = () => {
   })
     .then(r => r.text())
     .then(text => {
-      const accumulator: Set<string> = new Set(); // let's use a Set to avoid duplicates HOMIE
-      let match: RegExpExecArray | null;
-      while ((match = searchRegexp.exec(text))) {
-        accumulator.add(match[2]);
-      }
-      return Array.from(accumulator)
-        .sort()
-        .slice(2);
+      // ES2020 and matchAll FTW!
+      const results = Array.from(text.matchAll(searchRegexp), m => m[2]);
+      // let's use a Set to avoid duplicates HOMIE
+      const uniqueResults = Array.from(new Set(results));
+      return uniqueResults.sort().slice(2);
     });
 };
