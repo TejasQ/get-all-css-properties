@@ -35,7 +35,7 @@
     "node": ">=12.0.0"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^3.1.1"
   },
   "devDependencies": {
     "@types/node-fetch": "^2.5.4",
